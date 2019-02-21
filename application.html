@@ -16,9 +16,12 @@
 
     <!-- link to my own CSS -->
     <link rel="stylesheet" href="./css/chulhocss.css">
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.9.1.css">
+
 </head>
 
 <body class="bgimg">
+    <!-- nav bar-->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="index.html">Chulho Yoon</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -47,9 +50,11 @@
         <h1 style="color:red; font: bold;">Application</h1>
     </header>
     <main class="container-fluid">
+        <div id="qunit"></div>
+        <div id="qunit-fixture"></div>
         <div class="row">
             <section class="col-sm-11">
-
+                <!--age calculation App-->
                 <h3>Calculate your age!</h3>
 
                 <p>Enter your name:
@@ -66,14 +71,17 @@
                 <br>
                 <h3>
                     Retrieve previous results:
+                    <!--retrieving previous results that are stored in local storage-->
                 </h3>
                 <ul id="retrieving"></ul>
                 <button id="retrieve" class="btn btn-primary">Retrieve</button>
 
                 <button id="clearall" class="btn btn-primary">Clear All</button>
                 <br>
-                <button id="getquotes" class="btn" onclick="getJoke()" >Get Random Quotes</button> 
-                <p id="quote"></p>
+                <br>
+                <br>
+                <h3>Simpsons' Quotes</h3>
+                <p id="simpsons"></p>
             </section>
         </div>
     </main>
