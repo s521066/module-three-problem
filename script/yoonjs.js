@@ -13,7 +13,7 @@ function negative(n, m) {
         return false;
     }
 }
-window.onload = function () {
+/* window.onload = function () {
     QUnit.test("UnitTest", function (assert) {
         let subtraction = subtract(1, 2);
         assert.equal(subtraction, "1", "2 - 1 is 1, so passed!")
@@ -24,7 +24,7 @@ window.onload = function () {
     
     })
 
-}
+} */
 
 console.log('Define constants')
 
